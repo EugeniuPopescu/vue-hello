@@ -8,8 +8,15 @@
     </head>
     
     <body>
+        <!-- div che funge da contenitore vue -->
         <div id="app">
-            <h1>{{ message }}</h1>
+            <h1>{{ message }} {{ name }} {{ surname }}</h1>
+            <h3>Insert your credentials </h3>
+            Name: <input v-model="name" type="text">
+
+            <br>
+            <p>This is my img</p>
+            <img :src="mySrc" alt="">
         </div>
 
         <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
